@@ -1,0 +1,18 @@
+[package]
+name = "share-neos-directory-observe-uploader"
+description = "Observe directory and upload new images to share.neos.love"
+version = "0.1.0"
+authors = ["lill <lill@knoyism.net>"]
+edition = "2021"
+license= "MIT"
+repository = "https://github.com/lillazk/share-neos-directory-observe-uploader"
+readme = "README.md"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+futures = "0.3"
+reqwest = { version = "0.11", features = ["multipart"] }
+notify = "5.1"
+
+[profile.release]
+opt-level = "z"
